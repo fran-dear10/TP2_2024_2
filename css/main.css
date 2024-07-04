@@ -428,7 +428,7 @@ h6 {
 
 .footer .footer-about .logo span {
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  font-family: var(--title-font);
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -1019,8 +1019,7 @@ section,
 # Constructions Section
 --------------------------------------------------------------*/
 .constructions {
-  background: url("../img/bck_3.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/bck_3.jpg"); 
 }
 
 
@@ -1061,6 +1060,14 @@ section,
 .constructions .card-item p {
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin: 0;
+}
+
+.constructions h2 {
+  font-family: var(--hero-font);
+}
+
+.constructions h4 {
+  font-family: var(--hero-font);
 }
 
 /*--------------------------------------------------------------
@@ -1145,6 +1152,14 @@ section,
 
 .services .service-item:hover .readmore {
   color: var(--accent-color);
+}
+
+.services h2 {
+  font-family: var(--hero-font);
+}
+
+.services h3 {
+  font-family: var(--hero-font);
 }
 
 /*--------------------------------------------------------------
@@ -1437,6 +1452,10 @@ section,
   transform: scale(1.1);
 }
 
+.projects h2 {
+  font-family: var(--hero-font);
+}
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
@@ -1558,6 +1577,10 @@ section,
   }
 }
 
+.testimonials h2 {
+  font-family: var(--hero-font);
+}
+
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
 --------------------------------------------------------------*/
@@ -1633,6 +1656,10 @@ section,
 
 .recent-blog-posts .post-item:hover .post-img img {
   transform: scale(1.1);
+}
+
+.recent-blog-posts h2 {
+  font-family: var(--hero-font);
 }
 
 /*--------------------------------------------------------------
@@ -1792,6 +1819,11 @@ section,
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
+  font-family: var(--hero-font);
+}
+
+.alt-services-2 h4 {
+  font-family: var(--hero-font);
 }
 
 .alt-services-2 .icon-box {
@@ -1821,7 +1853,7 @@ section,
 # Alt Services 3 Section
 --------------------------------------------------------------*/
 .alt-services-3 {
-  background: url("../img/bck_3.jpg") top;
+  background: url("../img/bck_4.jpg") top;
   background-repeat: no-repeat;
 }
 
@@ -1844,6 +1876,7 @@ section,
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
+  font-family: var(--hero-font);
 }
 
 .alt-services-3 .icon-box {
@@ -1946,6 +1979,14 @@ section,
   padding-bottom: 0;
   visibility: visible;
   opacity: 1;
+}
+
+.team h2 {
+  font-family: var(--hero-font);
+}
+
+.team h4 {
+  font-family: var(--hero-font);
 }
 
 /*--------------------------------------------------------------
