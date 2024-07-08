@@ -17,6 +17,7 @@
   --nav-font: "Poppins",  sans-serif;
   --hero-font: "Chivo Black",  sans-serif;
   --title-font: "DM Sans Black",  sans-serif;
+  --newtitle-font: "Chivo Black",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -743,7 +744,7 @@ section,
   font-size: 56px;
   font-weight: 700;
   position: relative;
-  font-family: var(--hero-font);
+  font-family: var(--newtitle-font);
 }
 
 .hero .info h2:after {
@@ -1063,11 +1064,11 @@ section,
 }
 
 .constructions h2 {
-  font-family: var(--hero-font);
+  font-family: var(--newtitle-font);
 }
 
 .constructions h4 {
-  font-family: var(--hero-font);
+  font-family: var(--newtitle-font);
 }
 
 /*--------------------------------------------------------------
@@ -1155,11 +1156,11 @@ section,
 }
 
 .services h2 {
-  font-family: var(--hero-font);
+  font-family: var(--newtitle-font);
 }
 
 .services h3 {
-  font-family: var(--hero-font);
+  font-family: var(--newtitle-font);
 }
 
 /*--------------------------------------------------------------
@@ -1453,7 +1454,7 @@ section,
 }
 
 .projects h2 {
-  font-family: var(--hero-font);
+  font-family: var(--newtitle-font);
 }
 
 /*--------------------------------------------------------------
@@ -1482,7 +1483,7 @@ section,
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 10px;
-  border: 6px solid var(--background-color);
+  border: 6px solid var(--accent-color);
   position: absolute;
   left: -45px;
   border-radius: 50px;
@@ -1578,12 +1579,17 @@ section,
 }
 
 .testimonials h2 {
-  font-family: var(--hero-font);
+  font-family: var(--newtitle-font);
 }
 
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
 --------------------------------------------------------------*/
+.recent-blog-posts {
+  background: url("../img/bck_5.jpg"); 
+  background-repeat: no-repeat;
+}
+
 .recent-blog-posts .post-item {
   background-color: #ffffff;
   box-shadow: 0px 2px 20px color-mix(in srgb, var(--accent-color), transparent 62%);
@@ -1659,7 +1665,7 @@ section,
 }
 
 .recent-blog-posts h2 {
-  font-family: var(--hero-font);
+  font-family: var(--newtitle-font);
 }
 
 /*--------------------------------------------------------------
@@ -1819,11 +1825,11 @@ section,
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
-  font-family: var(--hero-font);
+  font-family: var(--newtitle-font);
 }
 
 .alt-services-2 h4 {
-  font-family: var(--hero-font);
+  font-family: var(--newtitle-font);
 }
 
 .alt-services-2 .icon-box {
@@ -1876,7 +1882,7 @@ section,
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
-  font-family: var(--hero-font);
+  font-family: var(--newtitle-font);
 }
 
 .alt-services-3 .icon-box {
@@ -1982,11 +1988,11 @@ section,
 }
 
 .team h2 {
-  font-family: var(--hero-font);
+  font-family: var(--newtitle-font);
 }
 
 .team h4 {
-  font-family: var(--hero-font);
+  font-family: var(--newtitle-font);
 }
 
 /*--------------------------------------------------------------
