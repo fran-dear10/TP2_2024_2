@@ -744,7 +744,8 @@ section,
   font-size: 56px;
   font-weight: 700;
   position: relative;
-  font-family: var(--newtitle-font);
+  font-family: var(--title-font);
+  color: color-mix(in srgb, var(--contrast-color), transparent 0%);
 }
 
 .hero .info h2:after {
@@ -753,7 +754,7 @@ section,
   display: block;
   width: 240px;
   height: 4px;
-  background: var(--accent-color);
+  background: var(--contrast-color);
   left: 0;
   right: 0;
   bottom: 0;
@@ -767,12 +768,12 @@ section,
 }
 
 .hero .info p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--contrast-color), transparent 0%);
   font-size: 18px;
 }
 
 .hero .info .btn-get-started {
-  color: #469BC7;
+  color: #ffffff;
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 16px;
@@ -782,12 +783,12 @@ section,
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--contrast-color);
 }
 
 .hero .info .btn-get-started:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: var(--contrast-color);
+  color: var(--accent-color);
 }
 
 .hero .carousel {
@@ -1064,11 +1065,11 @@ section,
 }
 
 .constructions h2 {
-  font-family: var(--newtitle-font);
+  font-family: var(--title-font);
 }
 
 .constructions h4 {
-  font-family: var(--newtitle-font);
+  font-family: var(--title-font);
 }
 
 /*--------------------------------------------------------------
@@ -1156,11 +1157,11 @@ section,
 }
 
 .services h2 {
-  font-family: var(--newtitle-font);
+  font-family: var(--title-font);
 }
 
 .services h3 {
-  font-family: var(--newtitle-font);
+  font-family: var(--title-font);
 }
 
 /*--------------------------------------------------------------
@@ -1454,7 +1455,7 @@ section,
 }
 
 .projects h2 {
-  font-family: var(--newtitle-font);
+  font-family: var(--title-font);
 }
 
 /*--------------------------------------------------------------
@@ -1579,7 +1580,7 @@ section,
 }
 
 .testimonials h2 {
-  font-family: var(--newtitle-font);
+  font-family: var(--title-font);
 }
 
 /*--------------------------------------------------------------
@@ -1665,7 +1666,7 @@ section,
 }
 
 .recent-blog-posts h2 {
-  font-family: var(--newtitle-font);
+  font-family: var(--title-font);
 }
 
 /*--------------------------------------------------------------
@@ -1825,11 +1826,11 @@ section,
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
-  font-family: var(--newtitle-font);
+  font-family: var(--title-font);
 }
 
 .alt-services-2 h4 {
-  font-family: var(--newtitle-font);
+  font-family: var(--title-font);
 }
 
 .alt-services-2 .icon-box {
@@ -1882,7 +1883,8 @@ section,
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
-  font-family: var(--newtitle-font);
+  font-family: var(--title-font);
+  position: relative
 }
 
 .alt-services-3 .icon-box {
@@ -1988,11 +1990,11 @@ section,
 }
 
 .team h2 {
-  font-family: var(--newtitle-font);
+  font-family: var(--title-font);
 }
 
 .team h4 {
-  font-family: var(--newtitle-font);
+  font-family: var(--title-font);
 }
 
 /*--------------------------------------------------------------
