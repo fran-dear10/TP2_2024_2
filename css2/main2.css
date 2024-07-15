@@ -26,11 +26,13 @@
   --heading-color: #52565e; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #469BC7; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --contrast-color: #ffffff; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
+  --button-color: #2f779b;
+  --black-color: #000000;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.55);  /* The default color of the main navmenu links */
+  --nav-color: rgba(0, 0, 0, 0.76);  /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -78,7 +80,7 @@ h6 {
 .header {
   --background-color: rgba(255, 255, 255, 0);
   --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --heading-color: #000000;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 20px 0;
@@ -237,7 +239,7 @@ h6 {
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
-    color: var(--nav-dropdown-hover-color);
+    color: #4bb9f0;
   }
 
   .navmenu .dropdown:hover>ul {
@@ -329,7 +331,7 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: #4bb9f0;
   }
 
   .navmenu .active i,
@@ -389,7 +391,7 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  --background-color: #002a3ff1;
+  --background-color: #004e75;
   --heading-color: var(--contrast-color);
   --default-color: var(--contrast-color);
   color: var(--default-color);
@@ -574,7 +576,7 @@ h6 {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--default-color);
+  color: var(--contrast-color);
   line-height: 0;
 }
 
@@ -709,9 +711,9 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  --default-color: #ffffff;
-  --background-color: #00213100;
-  --heading-color: #ffffff;
+  --default-color: #255d79;
+  --background-color: #f1ebdf00;
+  --heading-color: #1f1f1f;
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -744,17 +746,18 @@ section,
   font-weight: 700;
   position: relative;
   font-family: var(--title-font);
+  color: color-mix(in srgb, var(--button-color), transparent 0%);
 }
 
 .hero .info h2:after {
   content: "";
   position: absolute;
   display: block;
-  width: 80px;
+  width: 240px;
   height: 4px;
-  background: var(--contrast-color);
+  background: var(--button-color);
   left: 0;
-  right: 0;
+  right: 5;
   bottom: 0;
   margin: auto;
 }
@@ -771,7 +774,7 @@ section,
 }
 
 .hero .info .btn-get-started {
-  color: var(--contrast-color);
+  color: #2f779b;
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 16px;
@@ -781,12 +784,12 @@ section,
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid var(--contrast-color);
+  border: 2px solid var(--button-color);
 }
 
 .hero .info .btn-get-started:hover {
-  background: var(--contrast-color);
-  color: var(--accent-color);
+  background: var(--button-color);
+  color: var(--contrast-color);
 }
 
 .hero .carousel {
@@ -813,6 +816,13 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .hero .carousel-item img {
+  width: 140%;
+  height: 100%;
+  }
 }
 
 .hero .carousel-item::before {
@@ -893,7 +903,7 @@ section,
   content: "";
   position: absolute;
   display: block;
-  width: 60px;
+  width: 200px;
   height: 4px;
   background: var(--accent-color);
   left: 0;
@@ -901,13 +911,15 @@ section,
 }
 
 .get-started .content p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .get-started .php-email-form {
-  background: color-mix(in srgb, var(--default-color), transparent 97%);
+  background: color-mix(in srgb, var(--accent-color), transparent 70%);
   padding: 30px;
   height: 100%;
+  border-radius: 20px;
+  color: #000000;
 }
 
 @media (max-width: 575px) {
@@ -974,9 +986,9 @@ section,
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 50;
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 20%);
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 20%);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
@@ -998,7 +1010,7 @@ section,
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 30px;
 }
 
 .get-started .php-email-form button[type=submit]:hover {
@@ -1060,6 +1072,7 @@ section,
 --------------------------------------------------------------*/
 .services {
   background-color: #469cc762;
+  font-size: 17.5px;
 }
 
 .services .service-item {
@@ -1112,7 +1125,7 @@ section,
 
 .services .service-item p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -1325,6 +1338,11 @@ section,
 /*--------------------------------------------------------------
 # Projects Section
 --------------------------------------------------------------*/
+.projects {
+  background: url("../img2/bck_6.jpg"); 
+  font-size: 17.5px;
+}
+
 .projects .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -1365,7 +1383,6 @@ section,
 }
 
 .projects .portfolio-content {
-  border: 5px solid color-mix(in srgb, var(--accent-color), transparent 0%);
   position: relative;
   overflow: hidden;
   border-radius: 30px 0 30px 0;
@@ -1410,7 +1427,7 @@ section,
 .projects .portfolio-content .portfolio-info .preview-link,
 .projects .portfolio-content .portfolio-info .details-link {
   position: absolute;
-  left: calc(50% - 40px);
+  left: calc(57% - 40px);
   font-size: 26px;
   top: calc(50% - 14px);
   color: #fff;
@@ -1444,6 +1461,10 @@ section,
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+.testimonials p {
+  font-size: 17.5px;
+}
+
 .testimonials .testimonial-wrap {
   padding-left: 50px;
 }
@@ -1518,6 +1539,7 @@ section,
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 15px auto 15px auto;
+  font-size: 16px;
 }
 
 .testimonials .swiper-wrapper {
@@ -1569,6 +1591,12 @@ section,
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
 --------------------------------------------------------------*/
+.recent-blog-posts {
+  background: url("../img2/bck_5.jpg"); 
+  background-repeat: no-repeat;
+  font-size: 17.5px;
+}
+
 .recent-blog-posts .post-item {
   background-color: #ffffff;
   box-shadow: 0px 2px 20px color-mix(in srgb, var(--accent-color), transparent 62%);
@@ -1640,7 +1668,7 @@ section,
 }
 
 .recent-blog-posts .post-item:hover .post-img img {
-  transform: scale(1.1);
+  transform: scale(1.150);
 }
 
 .recent-blog-posts h2 {
@@ -1828,7 +1856,7 @@ section,
 
 .alt-services-2 .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 14.5px;
   margin-bottom: 0;
 }
 
