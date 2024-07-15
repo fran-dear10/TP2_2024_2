@@ -125,6 +125,10 @@ h6 {
   color: #ffffff;
 }
 
+.scrolled .header .logo span {
+  color: #ffffff
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -437,6 +441,7 @@ h6 {
 }
 
 .footer .footer-about p {
+  color: #ffffff
   font-size: 14px;
   font-family: var(--heading-font);
 }

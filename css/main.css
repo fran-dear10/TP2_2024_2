@@ -104,7 +104,7 @@ h6 {
   font-size: 24px;
   padding-left: 1px;
   font-family: var(--heading-font);
-  color: var(--color-primary);
+  color: #000000
 }
 
 .scrolled .header {
@@ -122,6 +122,10 @@ h6 {
 
 .scrolled .header .logo h1 {
   color: #ffffff;
+}
+
+.scrolled .header .logo span {
+  color: #ffffff
 }
 
 /*--------------------------------------------------------------
